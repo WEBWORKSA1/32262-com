@@ -1,0 +1,18 @@
+---
+title: "Data Sources & Methodology | 32262"
+description: "Where 32262.com's ZIP, postal, map and moving-cost data comes from, how distances and estimates are calculated, and known limitations."
+---
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/">Home</a> › Data &amp; methodology</nav>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Methodology</span><h1 style="margin-top:12px">Data sources &amp; methodology</h1></div></section>
+<div class="wrap prose" style="padding-bottom:20px">
+<div class="table-w"><table><tr><th>Data</th><th>Source</th><th>License</th></tr>
+<tr><td>US ZIP centers (42,555)</td><td><code>zipcodes</code> v8 (npm) via jsDelivr</td><td>BSD</td></tr>
+<tr><td>Worldwide postal codes (60+ countries)</td><td>Zippopotam.us (GeoNames)</td><td>ODbL / DbCL</td></tr>
+<tr><td>3-digit prefix table (931)</td><td>Derived by 32262.com from the dataset above</td><td>CC BY 4.0</td></tr>
+<tr><td>Maps</td><td>OpenStreetMap</td><td>ODbL</td></tr>
+<tr><td>Moving-cost benchmarks</td><td>Opendoor &amp; Storage Scholars 2026 guides; FMCSA</td><td>Cited</td></tr>
+<tr><td>Migration trends</td><td>United Van Lines 2025 National Movers Study</td><td>Cited</td></tr></table></div>
+<h2>Calculations</h2><ul><li><b>Distance:</b> haversine, Earth radius 3,958.8 mi; road ≈ 1.2× straight line; drive time at 55 mph.</li><li><b>Prefix → city:</b> the most frequent city among active ZIPs sharing a prefix.</li><li><b>Time zones:</b> state-level assignment, with split-state notes.</li><li><b>Moving costs:</b> see the <a href="tools/moving-cost.html">estimator</a> assumptions.</li></ul>
+<h2>Known limitations</h2><p>Open ZIP data includes most standard and PO-box ZIPs; some unique and military ZIPs may be missing, and ZIP boundaries change. US ZIP totals vary by source (Wikipedia cites 41,557 as of October 2025; zip-codes.com lists 41,517 in October 2026) because datasets differ on retired and special-purpose codes.</p>
+<p>Spotted an error? <a href="contact.html">Tell us</a> — corrections are reviewed within 72 hours.</p>
+</div>
