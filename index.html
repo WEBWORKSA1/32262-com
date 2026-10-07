@@ -1,0 +1,87 @@
+---
+title: "32262 — Free ZIP & Postal Code Lookup, Distance, Radius & Moving Cost Tools"
+description: "Look up any ZIP or postal code in 60+ countries, measure ZIP-to-ZIP distance, find ZIPs in a radius, estimate moving costs and compare up to 5 vetted movers free."
+zip: true
+---
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">ZIP &amp; postal intelligence · 60+ countries</span>
+  <h1 style="margin-top:14px;max-width:820px">Know any ZIP. Plan any move.</h1>
+  <p class="lead">Type a ZIP, postal code or “City, ST”. Get the place, map, time zone, sectional center, nearest ZIPs — and what it really costs to move there.</p>
+  <form id="hero-search" class="search" role="search">
+    <label class="sr" for="h-cc">Country</label><select id="h-cc" name="cc" data-countries></select>
+    <label class="sr" for="h-q">ZIP, postal code or City, ST</label><input id="h-q" name="q" placeholder="32256 · Jacksonville, FL · SW1A · 75008" autocomplete="postal-code" required>
+    <button class="btn btn-p" type="submit">Look up</button>
+  </form>
+  <div class="chips"><button class="chip" type="button" data-try="32262">32262 (our namesake)</button><button class="chip" type="button" data-try="90210">90210</button><button class="chip" type="button" data-try="Jacksonville, FL">Jacksonville, FL</button><button class="chip" type="button" data-try="75008" data-cc="FR">75008 Paris</button><button class="chip" type="button" data-try="M5V" data-cc="CA">M5V Toronto</button><button class="chip" type="button" data-try="110001" data-cc="IN">110001 New Delhi</button></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="grid g4 reveal">
+    <div class="card"><div class="stat">42,555</div><div class="stat-l">US ZIP codes mapped with coordinates</div></div>
+    <div class="card"><div class="stat">931</div><div class="stat-l">3-digit sectional-center prefixes decoded</div></div>
+    <div class="card"><div class="stat">60+</div><div class="stat-l">countries in live postal lookup</div></div>
+    <div class="card"><div class="stat">$0</div><div class="stat-l">every tool is free — no sign-up</div></div>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><div><span class="eyebrow">Tools</span><h2 style="margin-top:10px">Everything a 5-digit code can tell you</h2></div><p><a href="{{ site.baseurl }}/tools/index.html">All tools →</a></p></div>
+  <div class="grid g4 reveal">
+    <a class="card" href="{{ site.baseurl }}/lookup.html"><div class="ico">⌖</div><h3>ZIP &amp; postal lookup</h3><p class="muted">Place, map, time zone, SCF and nearest ZIPs in 60+ countries.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/zip-distance.html"><div class="ico">↔</div><h3>ZIP distance</h3><p class="muted">Miles, km, drive time and typical move cost between two ZIPs.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/zip-radius.html"><div class="ico">◎</div><h3>Radius search</h3><p class="muted">Every ZIP within X miles — download as CSV for mailers and ads.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/moving-cost.html"><div class="ico">$</div><h3>Moving cost estimator</h3><p class="muted">Full-service vs truck vs container, with peak-season pricing.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/zip-prefix.html"><div class="ico">#</div><h3>ZIP prefix decoder</h3><p class="muted">What the first 1–3 digits of a ZIP reveal.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/code-decoder.html"><div class="ico">⑤</div><h3>5-digit code decoder</h3><p class="muted">One number, checked as a postal code in 20 countries + math facts.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/moving-checklist.html"><div class="ico">✓</div><h3>Moving checklist</h3><p class="muted">A dated, week-by-week plan that saves your progress.</p></a>
+    <a class="card" href="{{ site.baseurl }}/tools/rent-affordability.html"><div class="ico">⌂</div><h3>Rent affordability</h3><p class="muted">30% rule, 40× test and debt-to-income in one view.</p></a>
+  </div>
+  <div class="ad-slot" data-ad="inContent"></div>
+</div></section>
+
+<section class="sec" style="background:var(--bg2);border-block:1px solid var(--line)"><div class="wrap grid g2" style="align-items:center">
+  <div class="reveal"><span class="eyebrow">Free move quotes</span><h2 style="margin-top:10px">Compare up to 5 vetted movers in 60 seconds</h2>
+    <p class="muted">Tell us your route and home size. We match you with USDOT-registered movers — you choose who may contact you. No obligation, no fee.</p>
+    <ul><li>Typical price range shown instantly for your route</li><li>Only licensed interstate movers (USDOT/MC verified)</li><li>Optional add-ons: home insurance, storage, internet, agent referral</li></ul>
+    <a class="btn btn-p" href="{{ site.baseurl }}/get-quotes.html">Start my free quote</a>
+    <div class="trust"><span>No spam calls</span><span>Free &amp; no obligation</span><span>Your data never sold</span></div></div>
+  <div class="card reveal"><h3>Quick start</h3>
+    <form class="form" action="{{ site.baseurl }}/get-quotes.html" method="get">
+      <div class="row"><div><label for="qs-f">Moving from (ZIP)</label><input id="qs-f" name="from" inputmode="numeric" maxlength="5" pattern="\d{5}" placeholder="32256" required></div><div><label for="qs-t">Moving to (ZIP)</label><input id="qs-t" name="to" inputmode="numeric" maxlength="5" pattern="\d{5}" placeholder="29401" required></div></div>
+      <div><label for="qs-s">Home size</label><select id="qs-s" name="size"><option value="studio">Studio</option><option value="1br">1 bedroom</option><option value="2br" selected>2 bedrooms</option><option value="3br">3 bedrooms</option><option value="4br">4+ bedrooms</option></select></div>
+      <button class="btn btn-p" type="submit">See my price range →</button>
+    </form></div>
+</div></section>
+
+<section class="sec"><div class="wrap grid g2" style="align-items:center">
+  <div class="card reveal" style="background:var(--hero);color:#fff;border:0"><div class="digits"><span>3</span><span>2</span><span>2</span><span>6</span><span>2</span></div><p style="margin-top:14px;color:#D6EEF3">Inside Jacksonville's 322 block — yet not an active ZIP code. A French commune code. A number with 16 divisors.</p></div>
+  <div class="reveal"><span class="eyebrow">The 32262 story</span><h2 style="margin-top:10px">Why a ZIP site lives on a “missing” ZIP</h2><p class="muted">32262 sits between Jacksonville's 32260 and Neptune Beach's 32266 — a number the postal map skipped. We researched what it means across cultures, mail systems and mathematics.</p><a class="btn btn-o" href="{{ site.baseurl }}/the-32262-story.html">Read the story</a></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><div><span class="eyebrow">Guides</span><h2 style="margin-top:10px">Read before you move</h2></div><p><a href="{{ site.baseurl }}/guides/index.html">All guides →</a></p></div>
+  <div class="grid g3 reveal">
+    <a class="card" href="{{ site.baseurl }}/guides/how-zip-codes-work.html"><span class="pill">ZIP basics</span><h3 style="margin-top:10px">How ZIP codes actually work</h3><p class="muted">Regions, sectional centers, ZIP+4 and the four ZIP types.</p></a>
+    <a class="card" href="{{ site.baseurl }}/guides/avoid-moving-scams.html"><span class="pill warn">Must read</span><h3 style="margin-top:10px">Avoid moving scams</h3><p class="muted">FMCSA red flags, USDOT checks, and your legal documents.</p></a>
+    <a class="card" href="{{ site.baseurl }}/guides/moving-costs-2026.html"><span class="pill">Costs</span><h3 style="margin-top:10px">What moving costs in 2026</h3><p class="muted">Hourly vs weight pricing, peak season and hidden fees.</p></a>
+  </div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec-h"><div><span class="eyebrow">Watch</span><h2 style="margin-top:10px">Videos</h2></div><p><a href="{{ site.baseurl }}/videos.html">Video hub →</a></p></div>
+  <div class="grid g3" id="video-grid" data-max="3"></div>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap grid g3">
+  <a class="card reveal" href="{{ site.baseurl }}/contests.html"><div class="ico">🏆</div><h3>#MyZIP Story contest</h3><p class="muted">Tell us what makes your ZIP special. Monthly prize: $500 toward your move or a local business.</p></a>
+  <a class="card reveal" href="{{ site.baseurl }}/donate.html"><div class="ico">♥</div><h3>Keep the tools free</h3><p class="muted">Support data upkeep, new countries and community prizes.</p><div data-goal></div></a>
+  <a class="card reveal" href="{{ site.baseurl }}/pros.html"><div class="ico">⚑</div><h3>Movers, agents &amp; insurers</h3><p class="muted">Get exclusive, verified relocation leads by ZIP. Sponsor a state or tool.</p></a>
+</div></section>
+
+<section class="sec" style="padding-top:0"><div class="wrap prose">
+  <h2>Frequently asked</h2>
+  <details><summary>Is 32262 a real ZIP code?</summary><p>Not currently. 32262 falls in the 322 sectional-center block that serves Jacksonville, Florida, but it does not appear among the 42,555 ZIPs in open datasets — the active neighbors are 32260 (Jacksonville, PO box) and 32266 (Neptune Beach). <a href="{{ site.baseurl }}/the-32262-story.html">More</a>.</p></details>
+  <details><summary>Where does your data come from?</summary><p>US ZIP coordinates come from the open-source <code>zipcodes</code> dataset (BSD license); worldwide postal codes from Zippopotam.us (GeoNames, ODbL); maps from OpenStreetMap. See <a href="{{ site.baseurl }}/data-sources.html">data &amp; methodology</a>.</p></details>
+  <details><summary>Are you the Postal Service?</summary><p>No. 32262.com is an independent site. For official addressing, use USPS tools. ZIP Code™ is a USPS trademark.</p></details>
+  <details><summary>How do the free mover quotes work?</summary><p>You submit one short form; we pass your request only to USDOT-registered movers serving your route (or to you directly by email if you ask). Our partners may pay us a referral fee — it never costs you anything.</p></details>
+</div></section>

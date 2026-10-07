@@ -1,0 +1,90 @@
+---
+title: "Free Moving Quotes — Compare Up to 5 Vetted Movers | 32262"
+description: "Get free, no-obligation quotes from up to 5 USDOT-registered movers. See a typical price range for your route instantly. No spam calls — you choose who contacts you."
+zip: true
+nocta: true
+---
+<section class="hero"><div class="wrap grid g2 form-first" style="align-items:start">
+  <div>
+    <span class="eyebrow">Free · no obligation · 60 seconds</span>
+    <h1 style="margin-top:14px">Compare up to 5 vetted movers. Pay less.</h1>
+    <p class="lead">Movers bid lower when they know they're competing. Tell us your route once — we show your typical price range instantly and connect you only with USDOT-registered movers you approve.</p>
+    <div class="grid g3" style="margin-top:24px">
+      <div><div class="stat" style="color:#FFD9A8">15–30%</div><div class="small" style="color:#D6EEF3">summer premium you can avoid by moving off-peak</div></div>
+      <div><div class="stat" style="color:#FFD9A8">25–40%</div><div class="small" style="color:#D6EEF3">savings reported for mid-month, mid-week dates</div></div>
+      <div><div class="stat" style="color:#FFD9A8">3–5</div><div class="small" style="color:#D6EEF3">written estimates FMCSA suggests comparing</div></div>
+    </div>
+    <p class="small" style="color:#D6EEF3;margin-top:14px">Figures: Opendoor 2026 moving cost guide; FMCSA “Protect Your Move”.</p>
+  </div>
+  <div class="card" style="color:var(--ink)">
+    <form id="quote-app" class="form" data-form="Moving quote request" data-ok="Request received! Expect your quotes by email within 24 hours.">
+      <div class="steps" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+      <div class="step on">
+        <h2 style="font-size:1.3rem;margin:0">1 · Where are you moving?</h2>
+        <div class="row"><div><label for="q-f">From ZIP</label><input id="q-f" name="from_zip" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="32256"></div><div><label for="q-t">To ZIP</label><input id="q-t" name="to_zip" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="29401"></div></div>
+        <div><label for="q-d">Move date</label><input id="q-d" type="date" name="move_date" required></div>
+        <label class="check"><input type="checkbox" name="date_flexible" value="yes"> My dates are flexible (often cheaper)</label>
+        <button class="btn btn-p" type="button" data-next>Next: home size →</button>
+      </div>
+      <div class="step">
+        <h2 style="font-size:1.3rem;margin:0">2 · What are you moving?</h2>
+        <div class="opts" role="radiogroup" aria-label="Home size">
+          <label class="opt"><input type="radio" name="size" value="studio" required><span>Studio</span></label>
+          <label class="opt"><input type="radio" name="size" value="1br"><span>1 bedroom</span></label>
+          <label class="opt"><input type="radio" name="size" value="2br" checked><span>2 bedrooms</span></label>
+          <label class="opt"><input type="radio" name="size" value="3br"><span>3 bedrooms</span></label>
+          <label class="opt"><input type="radio" name="size" value="4br"><span>4+ bedrooms</span></label>
+          <label class="opt"><input type="radio" name="size" value="office"><span>Office</span></label>
+        </div>
+        <label>Services you want</label>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="services" value="Full-service movers" checked><span>Full-service</span></label>
+          <label class="opt"><input type="checkbox" name="services" value="Packing"><span>Packing</span></label>
+          <label class="opt"><input type="checkbox" name="services" value="Labor only"><span>Labor only</span></label>
+          <label class="opt"><input type="checkbox" name="services" value="Moving container"><span>Container</span></label>
+          <label class="opt"><input type="checkbox" name="services" value="Storage"><span>Storage</span></label>
+          <label class="opt"><input type="checkbox" name="services" value="Car shipping"><span>Car shipping</span></label>
+        </div>
+        <div class="est" id="q-est"><span class="small">Your typical price range appears here.</span></div>
+        <div class="row"><button class="btn btn-o" type="button" data-back>← Back</button><button class="btn btn-p" type="button" data-next>Next: get my quotes →</button></div>
+      </div>
+      <div class="step">
+        <h2 style="font-size:1.3rem;margin:0">3 · Where should we send your quotes?</h2>
+        <div class="row"><div><label for="q-n">Full name</label><input id="q-n" name="name" autocomplete="name" required></div><div><label for="q-e">Email</label><input id="q-e" type="email" name="email" autocomplete="email" required></div></div>
+        <div class="row"><div><label for="q-p">Phone <span class="muted">(optional)</span></label><input id="q-p" type="tel" name="phone" autocomplete="tel"></div><div><label for="q-c">Best way to reach you</label><select id="q-c" name="contact_pref"><option>Email only</option><option>Text message</option><option>Phone call</option></select></div></div>
+        <label>Also interested in <span class="muted">(optional, free)</span></label>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="extras" value="Home/renters insurance quote"><span>Insurance quote</span></label>
+          <label class="opt"><input type="checkbox" name="extras" value="Real estate agent"><span>Real estate agent</span></label>
+          <label class="opt"><input type="checkbox" name="extras" value="Mortgage pre-approval"><span>Mortgage</span></label>
+          <label class="opt"><input type="checkbox" name="extras" value="Internet & utilities setup"><span>Internet setup</span></label>
+        </div>
+        <div><label for="q-m">Anything movers should know? <span class="muted">(stairs, piano, elevator…)</span></label><textarea id="q-m" name="notes" rows="2"></textarea></div>
+        <input type="hidden" name="est_miles"><input type="hidden" name="est_range"><input type="hidden" name="route">
+        <label class="check"><input type="checkbox" name="consent" value="I agree to be contacted by 32262.com and up to 5 matched moving partners about my move by the method I selected. Consent is not a condition of purchase." required> I agree to be contacted about my move by 32262.com and up to 5 matched moving partners, using the method I chose. Consent is not a condition of purchase. See <a href="{{ site.baseurl }}/privacy.html">privacy</a>.</label>
+        <input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row"><button class="btn btn-o" type="button" data-back>← Back</button><button class="btn btn-p" type="submit">Get my free quotes</button></div>
+        <div class="form-msg" role="status"></div>
+      </div>
+      <div class="trust"><span>Free</span><span>USDOT-registered movers</span><span>Data never sold</span></div>
+    </form>
+    <div id="q-done" hidden><h2>You're all set 🎉</h2><p>Your request is in. Matched movers will send written estimates — compare them on price <em>and</em> on valuation coverage.</p><p><a class="btn btn-o" href="{{ site.baseurl }}/tools/moving-checklist.html">Open your moving checklist</a></p><p><a href="{{ site.baseurl }}/guides/avoid-moving-scams.html">Read: 9 FMCSA rules that protect your move →</a></p></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="grid g3">
+    <div class="card"><div class="ico">1</div><h3>Tell us once</h3><p class="muted">Route, date and home size. No account, no phone number required.</p></div>
+    <div class="card"><div class="ico">2</div><h3>See your range now</h3><p class="muted">Our estimator benchmarks your route against published 2026 industry pricing.</p></div>
+    <div class="card"><div class="ico">3</div><h3>Compare &amp; choose</h3><p class="muted">Get written estimates from licensed movers. Pick on price and protection.</p></div>
+  </div>
+  <div class="ad-slot" data-ad="inContent"></div>
+  <div class="grid g2" style="margin-top:8px">
+    <div class="card"><h3>Before you sign anything</h3><ul><li>Check the mover's USDOT number on FMCSA's search tool.</li><li>Insist on a written estimate, the <em>Your Rights and Responsibilities When You Move</em> booklet and the <em>Ready to Move</em> brochure.</li><li>Never sign a blank or incomplete document.</li><li>Choose valuation: basic is 60¢ per pound per item; Full Value Protection costs more but covers repair or replacement.</li></ul><a href="{{ site.baseurl }}/guides/avoid-moving-scams.html">Full scam-proof checklist →</a></div>
+    <div class="card"><h3>FAQ</h3>
+      <details><summary>Is this really free?</summary><p>Yes. Movers and service partners may pay us a referral fee. You pay nothing and owe nothing.</p></details>
+      <details><summary>Will I get spammed?</summary><p>No. You choose the contact method; we cap matches at 5; we never sell your data to list brokers.</p></details>
+      <details><summary>Do you handle international moves?</summary><p>Yes — put the destination city and country in the notes and use 00000 as the destination ZIP.</p></details>
+    </div>
+  </div>
+</div></section>
