@@ -1,0 +1,11 @@
+# 32262.com — GitHub Pages (Jekyll, free plan) settings
+title: "32262 · ZIP & Move Intelligence"
+# Project URL while on github.io (https://webworksa1.github.io/32262-com/).
+# When the custom domain 32262.com is pointed at GitHub Pages, change to:  baseurl: ""
+baseurl: "/32262-com"
+url: "https://32262.com"
+exclude: [README.md, project-docs, _gen, Gemfile, Gemfile.lock, node_modules]
+include: [".well-known"]
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }

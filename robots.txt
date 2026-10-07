@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://32262.com/sitemap.xml
