@@ -1,0 +1,26 @@
+---
+title: "Moving Cost Estimator 2026 — Movers vs Truck vs Container | 32262"
+description: "Estimate what your move costs by ZIP code: full-service movers, rental truck and moving container, with packing, peak-season pricing and valuation coverage."
+zip: true
+---
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/">Home</a> › <a href="index.html">Tools</a> › Moving cost</nav>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Tool</span><h1 style="margin-top:12px">Moving cost estimator</h1><p class="lead">Three ways to move, priced for your route and home size — built on published 2026 industry benchmarks.</p></div></section>
+<div class="wrap layout"><div>
+  <form id="cost-form" class="card form">
+    <div class="row"><div><label for="m-f">From ZIP</label><input id="m-f" name="from" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="32256"></div><div><label for="m-t">To ZIP</label><input id="m-t" name="to" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="29401"></div></div>
+    <div class="row"><div><label for="m-s">Home size</label><select id="m-s" name="size"><option value="studio">Studio</option><option value="1br">1 bedroom</option><option value="2br" selected>2 bedrooms</option><option value="3br">3 bedrooms</option><option value="4br">4+ bedrooms</option></select></div><div><label for="m-d">Move date</label><input id="m-d" type="date" name="date"></div></div>
+    <div class="row"><div><label for="m-v">Declared value for Full Value Protection ($, optional)</label><input id="m-v" name="value" type="number" min="0" step="1000" placeholder="40000"></div><div style="align-self:end"><label class="check"><input type="checkbox" name="packing" value="1"> Include professional packing</label></div></div>
+    <button class="btn btn-p" type="submit">Estimate my move</button>
+  </form>
+  <div id="cost-out"></div>
+  <div class="ad-slot" data-ad="inContent"></div>
+  <div class="prose"><h2>Assumptions &amp; sources</h2>
+  <ul>
+    <li><b>Local moves (&lt;100 mi)</b> are priced hourly at $100–$200/hour for a crew, 2–12 hours depending on home size, plus drive time (Opendoor; Storage Scholars 2026).</li>
+    <li><b>Long-distance moves</b> are priced by weight × distance. We assume ~2,000 lb (studio) to ~10,000 lb (4+ BR), at $0.65–$1.00/lb around 1,000 miles, scaled by distance. Published examples: 2–3 BR over 1,000+ miles ≈ $4,500–$8,500.</li>
+    <li><b>Peak season</b> (May–September) adds 15–30%.</li>
+    <li><b>DIY truck:</b> ~$335 for a 10-mile local move to ~$3,250 for 1,500 miles, before your time.</li>
+    <li><b>Packing</b> adds $200–$1,500; <b>Full Value Protection</b> costs roughly 1–2% of declared value. Basic coverage is only 60¢ per pound per item.</li>
+  </ul>
+  <p class="small muted">Estimates are planning ranges, not offers. Only a written estimate from a registered mover is a price.</p></div>
+</div><aside class="side"><div class="card"><h3>Beat the estimate</h3><p class="muted small">Competing movers often come in under the range.</p><a class="btn btn-p btn-sm" href="{{ site.baseurl }}/get-quotes.html">Get 5 free quotes</a></div><div class="ad-slot" data-ad="sidebar"></div></aside></div>

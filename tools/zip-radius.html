@@ -1,0 +1,13 @@
+---
+title: "ZIP Codes Within a Radius — Free Radius Search + CSV | 32262"
+description: "Find every US ZIP code within 1–100 miles of any ZIP. Sorted by distance, mapped, and downloadable as CSV for direct mail, ads and delivery zones."
+zip: true
+---
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/">Home</a> › <a href="index.html">Tools</a> › Radius search</nav>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Tool</span><h1 style="margin-top:12px">ZIP codes within a radius</h1><p class="lead">Every ZIP within X miles of a center ZIP — for delivery zones, ad targeting, direct mail and service areas.</p></div></section>
+<div class="wrap layout"><div>
+  <form id="radius-form" class="card form"><div class="row"><div><label for="r-z">Center ZIP</label><input id="r-z" name="zip" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="32256"></div><div><label for="r-r">Radius (miles)</label><select id="r-r" name="r"><option>1</option><option>3</option><option selected>5</option><option>10</option><option>15</option><option>25</option><option>50</option><option>100</option></select></div></div><button class="btn btn-p" type="submit">Find ZIPs</button><p class="small muted" style="margin:0">First search downloads the 42,555-ZIP dataset (about 1 MB compressed) once; later searches are instant.</p></form>
+  <div id="radius-out"></div>
+  <div class="ad-slot" data-ad="inContent"></div>
+  <div class="prose"><h2>Use cases</h2><ul><li><b>Local businesses:</b> define a delivery or service area and paste ZIPs into Google or Meta ad targeting.</li><li><b>Direct mail:</b> build an EDDM-style ZIP list around a store.</li><li><b>Home search:</b> list every ZIP within commuting range of a new job.</li></ul><p class="small muted">Distances are between ZIP center points; a ZIP whose area touches the circle but whose center lies outside it is not listed.</p></div>
+</div><aside class="side"><div class="card"><h3>Sponsor this tool</h3><p class="muted small">Reach marketers and businesses building service areas.</p><a class="btn btn-o btn-sm" href="{{ site.baseurl }}/advertise.html">Advertise</a></div><div class="ad-slot" data-ad="sidebar"></div></aside></div>

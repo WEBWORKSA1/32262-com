@@ -1,0 +1,15 @@
+---
+title: "ZIP Prefix Decoder — What the First 3 Digits Mean | 32262"
+description: "Decode any 1–3 digit ZIP prefix: the national region, the sectional center facility (SCF) city and state, and how many active ZIPs share it."
+zip: true
+---
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/">Home</a> › <a href="index.html">Tools</a> › Prefix decoder</nav>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Tool</span><h1 style="margin-top:12px">ZIP prefix decoder</h1><p class="lead">The first digit is a group of states. The first three digits point to a sectional center facility (SCF) — the mail-processing hub for an area.</p></div></section>
+<div class="wrap layout"><div>
+  <form id="prefix-form" class="card form"><div><label for="p-p">Type 1, 2 or 3 digits</label><input id="p-p" name="p" inputmode="numeric" maxlength="3" pattern="\d{1,3}" required placeholder="322"></div><button class="btn btn-p" type="submit">Decode</button></form>
+  <div id="prefix-out"></div>
+  <div class="ad-slot" data-ad="inContent"></div>
+  <div class="prose"><h2>The 10 national areas</h2>
+  <div class="table-w"><table><tr><th>First digit</th><th>States &amp; territories</th></tr><tr><td>0</td><td>CT, MA, ME, NH, NJ, RI, VT, PR, VI, Armed Forces Europe</td></tr><tr><td>1</td><td>DE, NY, PA</td></tr><tr><td>2</td><td>DC, MD, NC, SC, VA, WV</td></tr><tr><td>3</td><td>AL, FL, GA, MS, TN, Armed Forces Americas</td></tr><tr><td>4</td><td>IN, KY, MI, OH</td></tr><tr><td>5</td><td>IA, MN, MT, ND, SD, WI</td></tr><tr><td>6</td><td>IL, KS, MO, NE</td></tr><tr><td>7</td><td>AR, LA, OK, TX</td></tr><tr><td>8</td><td>AZ, CO, ID, NM, NV, UT, WY</td></tr><tr><td>9</td><td>AK, CA, HI, OR, WA, Pacific territories, Armed Forces Pacific</td></tr></table></div>
+  <p class="small muted">Prefix-to-city mapping is derived from the dominant city among active ZIPs sharing each prefix in open data; it is not an official USPS SCF list.</p></div>
+</div><aside class="side"><div class="ad-slot" data-ad="sidebar"></div><div class="card"><h3>Learn more</h3><a href="{{ site.baseurl }}/guides/how-zip-codes-work.html">How ZIP codes work →</a></div></aside></div>

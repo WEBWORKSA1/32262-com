@@ -1,0 +1,13 @@
+---
+title: "ZIP Code Distance Calculator — Miles, Drive Time & Move Cost | 32262"
+description: "Calculate the distance between two ZIP codes in miles and km, estimated road miles and drive time, direction of travel and the typical cost to move between them."
+zip: true
+---
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="{{ site.baseurl }}/">Home</a> › <a href="index.html">Tools</a> › ZIP distance</nav>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Tool</span><h1 style="margin-top:12px">ZIP code distance calculator</h1><p class="lead">Straight-line distance, estimated road miles, drive time and typical moving cost between any two US ZIPs.</p></div></section>
+<div class="wrap layout"><div>
+  <form id="distance-form" class="card form"><div class="row"><div><label for="d-a">From ZIP</label><input id="d-a" name="a" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="32256"></div><div><label for="d-b">To ZIP</label><input id="d-b" name="b" inputmode="numeric" maxlength="5" pattern="\d{5}" required placeholder="97201"></div></div><button class="btn btn-p" type="submit">Calculate distance</button></form>
+  <div id="distance-out"></div>
+  <div class="ad-slot" data-ad="inContent"></div>
+  <div class="prose"><h2>How we calculate</h2><p>We use the haversine formula on each ZIP's center point (Earth radius 3,958.8 mi). Road distance is estimated at 1.2× straight-line — a common rule of thumb for US road networks — and drive time at an average 55 mph. For exact routing use a navigation app.</p><p>Moving-cost ranges come from our <a href="moving-cost.html">estimator</a>, which benchmarks published 2026 industry pricing.</p></div>
+</div><aside class="side"><div class="card"><h3>Compare real prices</h3><p class="muted small">Movers compete for your route.</p><a class="btn btn-p btn-sm" href="{{ site.baseurl }}/get-quotes.html">Free quotes</a></div><div class="ad-slot" data-ad="sidebar"></div></aside></div>
